@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#" method="get" enctype="multipart/form-data">
+    <div>
+        <p>Username</p>
+        <input type="text" placeholder="Username" name="username">
+    </div>
+    <div>
+        <p>Password</p>
+        <input type="password" placeholder="Password" name="password">
+    </div>
+    <div>
+        <p>Phone</p>
+        <input type="tel" placeholder="Phone" name="phone">
+    </div>
+    <div>
+        <p>Gender</p>
+        <div>
+            <input checked type="radio" name="radio1" value="male">Male
+        </div>
+        <div>
+            <input type="radio" name="radio1" value="female">Female
+        </div>
+    </div>
+    <div>
+        <p>Property</p>
+        <div>
+            <input type="radio" name="radio2" value="bike">Bike
+        </div>
+        <div>
+            <input checked type="radio" name="radio2" value="car">Car
+        </div>
+        <div>
+            <input disabled type="radio" name="radio2" value="flat">Flat
+        </div>
+    </div>
+    <div>
+        <p>Additionally</p>
+        <textarea name="additional"></textarea>
+    </div>
+    <div>
+        <p>Attach a photo</p>
+        <input type="file">
+    </div>
+    <div>
+        <p>Favourite color</p>
+        <select name="color">
+            <option value="red">Red</option>
+            <option selected value="yellow">Yellow</option>
+            <option value="blue">Blue</option>
+        </select>
+    </div>
+    <div>
+        <p>Action</p>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </div>
+</form>
+</body>
+</html>
