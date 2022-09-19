@@ -105,7 +105,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 }
 
 .radio__btn {
-    transform: scale(2);
+
 }
 
 /*------------------------Content----------------------------*/
@@ -121,11 +121,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     height: 300px;
     padding: 20px;
     border: 1px solid #dad9d9;
-
+    transition: all .5s ease 0s;
 }
 
 .content__column:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .content__column:hover {
