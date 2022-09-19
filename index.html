@@ -3,63 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<form action="#" method="get" enctype="multipart/form-data">
-    <div>
-        <p>Username</p>
-        <input type="text" placeholder="Username" name="username">
-    </div>
-    <div>
-        <p>Password</p>
-        <input type="password" placeholder="Password" name="password">
-    </div>
-    <div>
-        <p>Phone</p>
-        <input type="tel" placeholder="Phone" name="phone">
-    </div>
-    <div>
-        <p>Gender</p>
-        <div>
-            <input checked type="radio" name="radio1" value="male">Male
-        </div>
-        <div>
-            <input type="radio" name="radio1" value="female">Female
+<header class="header">
+    <div class="container">
+        <div class="header__row">
+            <div class="column">
+                <div class="logo">Rizitka</div>
+            </div>
+            <div class="column">
+                <input class="search" type="text">
+            </div>
+            <div class="column">
+                <img class="user" src="img/user.png">
+            </div>
         </div>
     </div>
-    <div>
-        <p>Property</p>
-        <div>
-            <input type="radio" name="radio2" value="bike">Bike
+</header>
+
+<div class="content">
+    <div class="container">
+        <div class="form">
+            <form action="#" method="get" enctype="multipart/form-data">
+                <h1 class="registration">Registration</h1>
+                <div>
+                    <p class="label">Username</p>
+                    <input class="username text" type="text" name="username">
+                </div>
+                <div>
+                    <p class="label">Password</p>
+                    <input class="password text" type="password" name="password">
+                </div>
+                <div>
+                    <p class="label">Phone</p>
+                    <input class="phone text" type="tel" name="phone">
+                </div>
+                <div class="gender-block">
+                    <p class="label">Gender</p>
+                    <div>
+                        <input class="radio__btn" checked type="radio" name="radio1" value="male">Male
+                    </div>
+                    <div>
+                        <input type="radio" name="radio1" value="female">Female
+                    </div>
+                </div>
+                <div>
+                    <p class="label">Additionally</p>
+                    <textarea class="textarea" name="additional"></textarea>
+                </div>
+                <div>
+                    <p>Attach a photo</p>
+                    <input type="file">
+                </div>
+                <div>
+                    <p>Favourite color</p>
+                    <select name="color">
+                        <option value="red">Red</option>
+                        <option selected value="yellow">Yellow</option>
+                        <option value="blue">Blue</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Action</p>
+                    <button class="btn submit-btn" type="submit">Submit</button>
+                    <button class="btn" type="reset">Reset</button>
+                </div>
+            </form>
         </div>
-        <div>
-            <input checked type="radio" name="radio2" value="car">Car
-        </div>
-        <div>
-            <input disabled type="radio" name="radio2" value="flat">Flat
-        </div>
+
     </div>
-    <div>
-        <p>Additionally</p>
-        <textarea name="additional"></textarea>
-    </div>
-    <div>
-        <p>Attach a photo</p>
-        <input type="file">
-    </div>
-    <div>
-        <p>Favourite color</p>
-        <select name="color">
-            <option value="red">Red</option>
-            <option selected value="yellow">Yellow</option>
-            <option value="blue">Blue</option>
-        </select>
-    </div>
-    <div>
-        <p>Action</p>
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
-    </div>
-</form>
+</div>
+
+
 </body>
 </html>
