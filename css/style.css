@@ -120,7 +120,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     max-width: 240px;
     height: 300px;
     padding: 20px;
-    border: 1px solid #dad9d9;
+    border: 1px solid #900;
+    border-bottom: none;
     transition: all .5s ease 0s;
 }
 
