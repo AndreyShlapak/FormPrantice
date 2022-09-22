@@ -1,0 +1,24 @@
+{
+  "name": "gulp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreyShlapak/FormPrantice.git"
+  },
+  "author": "andreyshlapak12@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreyShlapak/FormPrantice/issues"
+  },
+  "homepage": "https://github.com/AndreyShlapak/FormPrantice#readme",
+  "devDependencies": {
+    "del": "^7.0.0",
+    "gulp": "^4.0.2"
+  }
+}
