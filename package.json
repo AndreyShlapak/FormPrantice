@@ -7,18 +7,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AndreyShlapak/FormPrantice.git"
-  },
-  "author": "andreyshlapak12@gmail.com",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AndreyShlapak/FormPrantice/issues"
-  },
-  "homepage": "https://github.com/AndreyShlapak/FormPrantice#readme",
   "devDependencies": {
+    "browser-sync": "^2.27.10",
     "del": "^7.0.0",
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.55.0",
+    "webpack": "^5.74.0",
+    "webpack-stream": "^7.0.0"
   }
 }
