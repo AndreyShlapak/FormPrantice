@@ -9,29 +9,34 @@
 <body>
 <div class="wrapper">
   @@include('html/header.html')
-  <div class="content">
+  <main class="content">
     <div class="container">
-      <a href="#filter" class="content__filter-btn">Filter</a>
-      <div class="adaptive-filter" id="filter">
-        <div class="adaptive-filter__body">
-          <div class="adaptive-filter__title">Filters</div>
+      <a href="" class="content__filter-btn">Filter</a>
+      <div class="modal">
+        <div class="modal__body adaptive-filter">
+          <div class="modal__title">Filters</div>
           <div class="adaptive-filter__sub-items">
-            <div class="adaptive-filter__sub-item adaptive-filter__brand">
+            <a class="adaptive-filter__sub-item adaptive-filter__brand">
               Brand
-            </div>
-            <div class="adaptive-filter__sub-item adaptive-filter__cpu">
+            </a>
+            <a class="adaptive-filter__sub-item adaptive-filter__cpu">
               Cpu
-            </div>
-            <div class="adaptive-filter__sub-item adaptive-filter__amount">
+            </a>
+            <a class="adaptive-filter__sub-item adaptive-filter__amount">
               Amount SSD
-            </div>
+            </a>
           </div>
           <a class="adaptive-filter__btn" href="#">Back</a>
         </div>
+        <div class="modal__body adaptive-brand">
+
+        </div>
       </div>
+
       <div class="content__body">
         <div class="content__filter">
           <div class="content__brand">
+            <a class="content__title">Brand</a>
             <div class="filter-item">
               <input type="checkbox">
               <p class="filter-label">ASUS</p>
@@ -154,6 +159,7 @@
             </div>
           </div>
           <div class="content__cpu">
+            <h3 class="content__title">CPU</h3>
             <div class="filter-item">
               <input type="checkbox">
               <p class="filter-label">Intel Core i5</p>
@@ -216,6 +222,7 @@
             </div>
           </div>
           <div class="content__amount-ssd">
+            <h3 class="content__title">Amount SSD</h3>
             <div class="filter-item">
               <input type="checkbox">
               <p class="filter-label">512 GB</p>
@@ -422,7 +429,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </main>
   @@include('html/popup.html')
 </div>
 <script src="js/app.js"></script>
