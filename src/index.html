@@ -4,8 +4,54 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
 </head>
 <body>
-<a href="/main.html">main</a>
+    @@include('html/header.html')
+
+    <div class="image-slider swiper-container">
+        <div class="image-slider__wrapper swiper-wrapper">
+            <div class="image-slider__slide swiper-slide">
+                <div class="image-slider__image">
+                    <img src="https://content.rozetka.com.ua/files/images/original/289034849.jpg" alt="">
+                </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+                <div class="image-slider__image">
+                    <img src="https://content2.rozetka.com.ua/files/images/original/283425189.jpg" alt="">
+                </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+                <div class="image-slider__image">
+                    <img src="https://content2.rozetka.com.ua/files/images/original/288719149.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination image-slider__pagination"></div>
+
+        <script type="module">
+            import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+
+            const swiper = new Swiper('.image-slider', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    dynamicBullets: true
+                }
+            });
+        </script>
+    </div>
+
+    @@include('html/discount.html')
 </body>
 </html>
