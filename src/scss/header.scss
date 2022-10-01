@@ -28,6 +28,18 @@
 
   &__column-3 {
     flex-basis: 25%;
+    text-align: right;
+
+    a {
+      display: inline-block;
+      padding: 10px;
+      border-radius: 50%;
+      transition: 0.3s ease 0s;
+
+      &:hover {
+        background-color: #605c5c;
+      }
+    }
   }
 
   &__logo {
@@ -62,9 +74,5 @@
   &__user {
     width: 30px;
     height: auto;
-
-    &:hover {
-      background-color: #605c5c;
-    }
   }
 }

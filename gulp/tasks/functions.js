@@ -62,11 +62,18 @@ const js = () => {
         .pipe(browserSync.stream())
 }
 
+const img = () => {
+    return gulp
+        .src(path.src.img)
+        .pipe(gulp.dest(path.build.img));
+}
+
 export {
     watcher,
     reset,
     htmlCopy,
     server,
     scss,
-    js
+    js,
+    img
 }

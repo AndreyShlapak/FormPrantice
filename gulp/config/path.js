@@ -7,11 +7,13 @@ const rootFolder = nodePath.basename(nodePath.resolve());
 
 export const path = {
     src: {
+        img: `${srcFolder}/img/*.*`,
         js: `${srcFolder}/js/app.js`,
         scss: `${srcFolder}/scss/style.scss`,
         html: `${srcFolder}/*.html`,
     },
     build: {
+        img: `${buildFolder}/img/`,
         js: `${buildFolder}/js/`,
         html: `${buildFolder}/`,
         scss: `${buildFolder}/css`

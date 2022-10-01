@@ -98,6 +98,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header__column-3 {
   flex-basis: 25%;
+  text-align: right;
+}
+.header__column-3 a {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.3s ease 0s;
+}
+.header__column-3 a:hover {
+  background-color: #605c5c;
 }
 .header__logo {
   font-size: 30px;
@@ -128,9 +138,6 @@ h1, h2, h3, h4, h5, h6 {
 .header__user {
   width: 30px;
   height: auto;
-}
-.header__user:hover {
-  background-color: #605c5c;
 }
 
 .popup {

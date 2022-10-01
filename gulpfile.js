@@ -1,8 +1,8 @@
 import gulp from 'gulp';
 
-import { watcher, reset, htmlCopy, server, scss, js } from "./gulp/tasks/functions.js";
+import { watcher, reset, htmlCopy, server, scss, js, img } from "./gulp/tasks/functions.js";
 
-const mainTasks = gulp.parallel(htmlCopy, scss, js);
+const mainTasks = gulp.parallel(htmlCopy, scss, js, img);
 const secondTasks = gulp.parallel(watcher, server);
 
 const dev = gulp.series(reset, mainTasks, secondTasks);
